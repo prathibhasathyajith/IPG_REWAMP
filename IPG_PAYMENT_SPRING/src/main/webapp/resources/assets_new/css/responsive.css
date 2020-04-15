@@ -1,0 +1,97 @@
+/*
+@media only screen and (min-width: 570px) {
+    .PGI > .box {
+        
+    }
+}
+*/
+
+@media only screen and (max-width: 680px) {
+    .PGI > .box {
+        width: 90%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 615px) {
+    .PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field {
+        width: 100%;
+    }
+    .PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field_2 {
+        width: 49.5%;
+    }
+    .sec-field >.input-field >span.caImage {
+        width: 15%;
+    }
+    .sec-field >.input-field > input.input-cardField {
+        width: 85%;
+    }
+    .sec-field > .input-field > .input_captcha {
+        width: 35%;
+    }
+    .sec-button > .caption {
+        float: none;
+        margin: 4px 8px;
+        border-radius: 0px;
+        border-left: 0px solid;
+        border-right: 0px solid;
+        border-top: 0px solid;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field_2 {
+        width: 100%;
+    }
+    table#optional {
+        border: 0;
+    }
+    table#optional tr {
+        display: block;
+    }
+    table#optional td {
+        display: block;
+    }
+    table#optional td div.input-field {
+        padding: 3px;
+        margin-left: 2px;
+    }
+    table#optional td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+    table#optional td:last-child {
+        border-bottom: 0;
+    }
+    .sec-field > .input-field > .input_captcha {
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .sec-field >.input-field >span.caImage {
+        width: 20%;
+    }
+    .sec-field >.input-field > input.input-cardField {
+        width: 80%;
+    }
+    .sec-field > .input-field > .input_captcha {
+        width: 40%;
+    }
+    .sec-field > .input-field > .wv-refresh {
+        padding: 5px 5px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .sec-field >.input-field >span.caImage {
+        width: 25%;
+    }
+    .sec-field >.input-field > input.input-cardField {
+        width: 75%;
+    }
+    .sec-field > .input-field > .input_captcha {
+        width: 100%;
+    }
+    .sec-field > .input-field > .wv-refresh {
+        padding: 5px 5px;
+        border-right: 1px solid #d6d6d6;
+    }
+}

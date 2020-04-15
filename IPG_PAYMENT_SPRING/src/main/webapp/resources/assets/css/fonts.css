@@ -1,0 +1,155 @@
+/*------------ Raleway Font -----------------------------*/
+
+
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-Black.WOFF);
+    font-weight: bolder;
+    font-style: normal;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-BlackItalic.WOFF);
+    font-weight: bolder;
+    font-style: italic;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-Bold.WOFF);
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-BoldItalic.WOFF);
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-ExtraBold.WOFF);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-ExtraBoldItalic.WOFF);
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-ExtraLight.WOFF);
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-ExtraLightItalic.WOFF);
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-Light.WOFF);
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-Italic.WOFF);
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-Medium.WOFF);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-MediumItalic.WOFF);
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-LightItalic.WOFF);
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-Regular.WOFF);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/RalewaySemibold.WOFF);
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-SemiboldItalic.WOFF);
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-Thin.WOFF);
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway/Raleway-ThinItalic.WOFF);
+    font-weight: 200;
+    font-style: italic;
+}
+/*-------------------------------------------------------------------*/
+
+@font-face {
+    font-family: Aller;
+    src: url(../font/Aller_Bd.woff);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: adventpro;
+    src: url(../font/adventpro-thin.woff);
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: adventpro;
+    src: url(../font/adventpro-extralight.woff);
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: adventpro;
+    src: url(../font/adventpro-light.woff);
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: adventpro;
+    src: url(../font/adventpro-medium.woff);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: helwetica;
+    src: url(../font/HelveticaUltraLight.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: helwetica;
+    src: url(../font/HelveticaLight.woff);
+    font-weight: bold;
+    font-style: normal;
+}

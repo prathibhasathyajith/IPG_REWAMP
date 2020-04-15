@@ -1,0 +1,818 @@
+/* font faces */
+
+
+/* common styles */
+
+@font-face {
+    font-family: poppins-medium;
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: poppins-semibold;
+    src: url(fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold-italic;
+    src: url(fonts/Poppins-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F4FFFD 100%);
+}
+
+br {
+    content: "";
+    display: block;
+    margin-top: 9px;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+.input-width{
+    width: 200px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #cccccc;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #cccccc;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #cccccc;
+}
+.actionbar {
+    height: 48px;
+    font-family: poppins-semibold;
+    color: white;
+    display: none;
+}
+
+.actionbar .back {
+    padding: 16px;
+    float: left;
+    cursor: pointer;
+}
+
+.actionbar .title {
+    padding-top: 10px;
+}
+
+
+/* chechbox customization styles */
+
+#foo:checked::before,
+input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    clip: rect(0 0 0 0);
+}
+
+#foo:checked,
+input[type="radio"]+label::before {
+    content: url('images/radio-unchecked.svg');
+}
+
+input[type="radio"]:checked+label::before {
+    content: url('images/radio-checked.svg');
+}
+
+.content-wrapper {
+    display: table;
+    width: 768px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header {
+    position: relative;
+}
+
+.header .merchant-logo {
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+
+.header img {
+    float: left;
+}
+
+.header .merchant-logo .title {
+    font-family: poppins-medium;
+    font-size: 24px;
+    white-space: nowrap;
+    display: table;
+    padding-left: 8px;
+    margin-top: 20px;
+}
+
+.header .merchant-logo img {
+    max-height: 64px;
+}
+
+.header .bank-logo {
+    position: absolute;
+    height: 40px;
+    top: 24px;
+    right: 0;
+}
+
+.content {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 32px rgba(160, 186, 173, 0.4);
+    border-radius: 16px;
+    margin-top: 90px;
+}
+
+.content .error-line {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 12px 20px;
+    background: #FD5A5A;
+    color: white;
+    font-family: poppins-medium;
+    font-size: 13px;
+}
+
+.title {
+    font-family: poppins-medium;
+    font-size: 24px;
+}
+
+.footer {
+    text-align: center
+}
+
+.footer .bank-logo {
+    display: none;
+    margin: 16px auto;
+}
+
+.footer .epicpay-logo {
+    margin: 16px auto;
+    height: 40px;
+}
+
+
+/* payment details page styles */
+
+.content .form-container {
+    position: relative;
+    padding: 24px;
+}
+
+.content .amount {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+}
+
+.content .amount .label {
+    float: left;
+    font-family: poppins-medium;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+.content .amount .wrapper {
+    float: right;
+    display: table;
+    font-family: poppins-semibold;
+    font-size: 15px;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 24px;
+}
+
+.content .amount .wrapper span {
+    font-size: 20px;
+    margin-left: 4px;
+}
+
+.card-detail-form {
+    margin: 0;
+    margin-top: 24px;
+}
+
+.card-detail-form .input-row {
+    margin-top: 24px
+}
+
+.card-detail-form .input-row.card-expiry {
+    float: left;
+    margin-right: 24px
+}
+
+.card-detail-form .input-row label {
+    font-family: poppins-medium;
+    color: #333333;
+    font-size: 13px;
+    margin-left: 24px;
+}
+
+.card-detail-form .input-row label span {
+    position: relative;
+}
+
+.input-row label.with-info {
+    display: block;
+    float: left;
+}
+
+.input-row .info-tip {
+    display: table;
+    position: relative;
+}
+
+.input-row .info-tip .info-icon {
+    width: 14px;
+    height: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+    left: 8px;
+}
+
+.input-row .info-tip .info-icon .icon {
+    width: 14px;
+    height: 14px;
+}
+
+.input-row .info-tip .tip {
+    position: absolute;
+    left: -88px;
+    top: 16px;
+    display: none;
+    z-index: 10;
+}
+
+.input-row .info-tip .info-icon:hover~.tip {
+    display: block;
+}
+
+.card-detail-form .input-row input {
+    font-family: poppins-medium;
+    color: #333333;
+    font-size: 13px;
+    border-radius: 24px;
+    background: #F8F8F8;
+    padding: 10px 20px;
+    margin-top: 2px;
+    border: solid 2px #f8f8f8;
+}
+
+.card-detail-form .input-row input:hover {
+    border: 2px solid #e8e8e8;
+}
+
+.card-detail-form .input-row .card-logo {
+    margin-left: -60px;
+    margin-bottom: -6px;
+    height: 20px;
+}
+
+.card-detail-form .input-row select {
+    font-family: poppins-medium;
+    color: #cccccc;
+    font-size: 13px;
+    border-radius: 24px;
+    background: #F8F8F8;
+    background-image: url(images/select-arrow.svg);
+    padding: 10px 20px;
+    margin-top: 2px;
+    border: solid 2px #f8f8f8;
+    width: 132px;
+    background-repeat: no-repeat;
+    background-position-y: 22px;
+    background-position-x: 96px;
+}
+
+.card-detail-form .input-row select:hover {
+    border: 2px solid #e8e8e8;
+}
+
+.card-detail-form .input-row select:invalid,
+select option[value=""] {
+    color: #cccccc;
+}
+
+.card-detail-form .input-row select option {
+    color: #333333;
+}
+
+.card-detail-form .input-row select option:first-child {
+    color: #cccccc;
+}
+
+.card-detail-form .input-row.captcha input {
+    float: left;
+}
+
+.card-detail-form .input-row .captcha-wrapper {
+    float: left;
+    border-radius: 24px;
+    background: #F8F8F8;
+    padding: 6px 20px;
+    margin-top: -2px;
+    margin-left: 8px
+}
+
+.card-detail-form .input-row .captcha-refresh {
+    padding: 10px 12px;
+    display: inline-block;
+    margin-top: -2px;
+    border-radius: 36px;
+    cursor: pointer;
+}
+
+.card-detail-form .input-row .captcha-refresh:hover {
+    background: #f8f8f8;
+}
+
+.card-detail-form .input-row .captcha-refresh img {
+    height: 24px;
+}
+
+.card-detail-form .input-row input.error {
+    border: 2px solid #FD5A5A;
+}
+
+.card-detail-form .input-row select.error {
+    border: 2px solid #FD5A5A;
+}
+
+.card-detail-form .input-row input.cardname,
+input.cardnumber,
+input.email {
+    max-width: 308px;
+}
+
+.card-detail-form .input-row input.mobile {
+    max-width: 218px;
+    margin-top: -4px;
+}
+
+.card-detail-form .input-row input.email {
+    max-width: 218px;
+    margin-top: -4px;
+}
+
+.card-detail-form .input-row input.cvv {
+    max-width: 100px;
+}
+
+.card-detail-form .input-row input.captcha {
+    max-width: 182px;
+    margin-top: -4px;
+}
+
+.card-detail-form .input-row.mobile {
+    float: left;
+    margin-right: 32px;
+}
+
+.card-detail-form .seperator {
+    width: 100%;
+    height: 2px;
+    border-radius: 1px;
+    margin-top: 24px;
+    background: #eeeeee
+}
+
+.card-detail-form .button-wrapper {
+    text-align: right;
+    margin-top: 24px;
+}
+
+.primary-btn {
+    font-family: poppins-bold;
+    background: white;
+    font-size: 13px;
+    border-radius: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    -webkit-box-shadow: 0px 0px 15px rgba(32, 210, 178, 0.5);
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 0px 15px rgba(32, 210, 178, 0.5);
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 0px 0px 15px rgba(32, 210, 178, 0.5);
+}
+
+.secondary-btn {
+    cursor: pointer;
+    font-family: poppins-medium;
+    background: white;
+    color: #888888;
+    border: solid 2px white;
+    font-size: 13px;
+    border-radius: 24px;
+    padding: 10px 20px;
+}
+
+.secondary-btn:hover {
+    color: #333333;
+}
+
+.card-detail-form .button-wrapper .primary-btn {
+    font-family: poppins-bold-italic;
+}
+
+
+/* payemnt receipt page styles */
+
+.content .receipt-container {
+    position: relative;
+    padding: 24px;
+}
+
+.receipt-container .receipt-content {
+    padding: 32px;
+    display: table;
+    border-radius: 8px;
+    margin: 48px auto;
+}
+
+.receipt-content .merchant-logo {
+    display: table;
+    height: 48px;
+    margin: 0 auto;
+}
+
+.receipt-content .status {
+    display: table;
+    margin: 16px auto
+}
+
+.receipt-content .status img {
+    float: left;
+}
+
+.receipt-content .status span {
+    display: block;
+    font-size: 16px;
+    font-family: poppins-medium;
+    color: #20D2B2;
+    white-space: nowrap;
+    margin-left: 40px;
+    margin-top: 3px;
+}
+
+.receipt-container table {
+    width: 340px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: poppins-medium;
+}
+
+.receipt-container table td:first-child,
+td:last-child {
+    width: 1%;
+    white-space: nowrap;
+}
+
+.receipt-container table td:last-child {
+    text-align: right;
+}
+
+.receipt-container table td:nth-child(2) div {
+    border: 2px dashed #EEEEEE;
+    margin-top: 6px;
+}
+
+.receipt-container .redirecting-message {
+    font-size: 15px;
+    font-family: poppins-medium;
+    color: #000000;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+
+/* request pay details page styles */
+
+.request-detail-form .button-wrapper {
+    text-align: right;
+    margin-top: 24px;
+}
+
+.request-detail-form .card-type {
+    width: 405px;
+    display: table;
+    margin: 0 auto;
+}
+
+.request-detail-form .instruction {
+    display: table;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: poppins-medium;
+    color: #333333;
+    margin-bottom: 24px;
+}
+
+.request-detail-form .card-type .card {
+    width: 33.33%;
+    float: left;
+}
+
+.request-detail-form .card-type .card.first {
+    text-align: left;
+}
+
+.request-detail-form .card-type .card.second {
+    text-align: center;
+}
+
+.request-detail-form .card-type .card.third {
+    text-align: right;
+}
+
+.request-detail-form .card-type .card .container {
+    width: 110px;
+    display: inline-block;
+    background: #F8F8F8;
+    border-radius: 10px;
+    padding: 8px;
+    padding-bottom: 16px;
+    border: 2px solid #F8F8F8;
+    cursor: pointer;
+}
+
+.request-detail-form .card-type .card .container:hover {
+    border: 2px solid #e8e8e8;
+}
+
+.request-detail-form .card-type .card .container .card-logo {
+    width: 56px;
+    height: 56px;
+    display: table;
+    margin: 0 auto;
+}
+
+.request-detail-form .card-type .card .container .label {
+    display: table;
+    margin: 0 auto;
+    font-size: 13px;
+    font-family: poppins-medium;
+    color: #666666;
+}
+
+
+/* responsive layout */
+
+@media only screen and (min-width: 769px) and (max-width: 792px) {
+    /* common responsive styles */
+    .content-wrapper {
+        width: calc(100% - 24px);
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    /* common responsive styles */
+    .actionbar {
+        height: 48px;
+        font-family: poppins-semibold;
+        color: white;
+        display: block;
+    }
+    .content-wrapper {
+        width: calc(100% - 24px);
+        margin: 0;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .header {
+        text-align: center;
+        margin-top: 12px;
+    }
+    .header .merchant-logo {
+        position: static;
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .header .merchant-logo .title {
+        font-size: 18px;
+        padding-left: 8px;
+        margin-top: 6px;
+    }
+    .header .merchant-logo img {
+        max-height: 40px;
+        max-width: 60px;
+    }
+    .header .bank-logo {
+        display: none;
+    }
+    .content {
+        border-radius: 8px;
+        margin-top: 12px;
+    }
+    .content .error-line {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    .content .form-container {
+        padding: 16px;
+    }
+    .content .amount {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+    }
+    .content .amount .label {
+        display: none;
+    }
+    .content .amount .wrapper {
+        font-size: 12px;
+        color: white;
+        padding: 8px 16px;
+    }
+    .content .amount .wrapper span {
+        font-size: 16px;
+        margin-left: 2px;
+    }
+    .title {
+        font-size: 18px;
+    }
+    .footer .bank-logo {
+        display: inline;
+        height: 26px;
+    }
+    .footer .epicpay-logo {
+        height: 26px;
+        margin-left: 16px;
+    }
+    /* payment details page responsive styles */
+    .card-detail-form {
+        margin-top: 16px;
+    }
+    .card-detail-form .input-row {
+        margin-top: 16px
+    }
+    .card-detail-form .input-row.card-expiry {
+        float: none;
+        margin-right: 16px
+    }
+    .card-detail-form .input-row label {
+        font-size: 12px;
+        margin-left: 16px;
+    }
+    .input-row .info-tip .info-icon {
+        width: 14px;
+        height: 14px;
+        top: 2px;
+        left: 6px;
+    }
+    .input-row .info-tip .info-icon .icon {
+        width: 14px;
+        height: 14px;
+    }
+    .input-row .info-tip .tip {
+        left: -63px;
+        top: 12px;
+        height: 160px;
+    }
+    .card-detail-form .input-row input {
+        font-size: 12px;
+        padding: 8px 16px;
+        margin-top: 0px;
+    }
+    .card-detail-form .input-row .card-logo {
+        margin-left: -49px;
+        margin-bottom: -4px;
+        height: 16px;
+    }
+    .card-detail-form .input-row select {
+        font-size: 12px;
+        background-image: url(images/select-arrow-small.svg);
+        width: 110px;
+        padding: 8px 16px;
+        background-position-y: 14px;
+        background-position-x: 76px;
+    }
+    .card-detail-form .input-row select:invalid,
+    select option[value=""] {
+        color: #cccccc;
+    }
+    .card-detail-form .input-row select option {
+        color: #333333;
+    }
+    .card-detail-form .input-row select option:first-child {
+        color: #cccccc;
+    }
+    .card-detail-form .input-row.captcha input {
+        float: left;
+    }
+    .card-detail-form .input-row .captcha-wrapper {
+        padding: 7px 16px;
+        margin-top: 0px;
+    }
+    .card-detail-form .input-row .captcha-wrapper img {
+        height: 24px;
+    }
+    .card-detail-form .input-row .captcha-refresh {
+        padding: 6px 6px;
+        display: inline-block;
+        margin-top: 0;
+    }
+    .card-detail-form .input-row .captcha-refresh img {
+        height: 26px;
+    }
+    .card-detail-form .input-row input.error {
+        border: 2px solid #FD5A5A;
+    }
+    .card-detail-form .input-row select.error {
+        border: 2px solid #FD5A5A;
+    }
+    .card-detail-form .input-row input.cardname,
+    input.cardnumber,
+    input.email {
+        max-width: 308px;
+    }
+    .card-detail-form .input-row input.mobile {
+        max-width: 218px;
+    }
+    .card-detail-form .input-row input.cvv {
+        max-width: 100px;
+    }
+    .card-detail-form .input-row input.captcha {
+        width: 110px;
+    }
+    .card-detail-form .input-row.mobile {
+        float: none;
+        margin-right: 0;
+    }
+    .card-detail-form .button-wrapper {
+        text-align: right;
+        margin-top: 32px;
+    }
+    .primary-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .secondary-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .secondary-btn:hover {
+        color: #333333;
+    }
+    .card-detail-form .button-wrapper .primary-btn {
+        font-family: poppins-bold-italic;
+    }
+    /* payement receipt page responsive styles */
+}

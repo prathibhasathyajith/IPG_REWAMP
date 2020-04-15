@@ -1,0 +1,417 @@
+@import 'fonts.css';
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+.PGI {
+    width: 100%;
+}
+.PGI > .box {
+    width: 600px;
+    height: auto;
+    margin: 50px auto;
+    background-color: #ffffff;
+    box-shadow: 0 1px 6px 1px rgba(113, 113, 113, 0.3), 0 6px 4px 0px #9a9a9a30;
+}
+.PGI > .box > .content {}
+.PGI > .box > .content > .title-info {
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 600;
+    padding: 2px 25px;
+    text-align: right;
+    border-bottom: 1px solid gray;
+}
+.PGI > .box > .content > .message {
+    display: none;
+    background-color: #FF1717;
+    text-align: center;
+    font-size: 11px;
+    padding: 3px;
+    color: white;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+.PGI > .box > .content > .message > .msg {
+    width: 94%;
+    float: left;
+}
+.PGI > .box > .content > .message > button {
+    float: right;
+    border: 0px solid;
+    background-color: transparent;
+    font-size: 12px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+}
+.PGI > .box > .content > .message > button:hover {
+    color: black;
+}
+.PGI > .box > .content > .merchant {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 5px 0 5px 25px;
+}
+.PGI > .box > .content > .merchant > .logo {
+    float: left;
+    width: auto;
+}
+.PGI > .box > .content > .merchant > .logo-bank > img {
+    float: right;
+    width: auto;
+    height: 35px;
+    padding: 0px 25px 0px 25px;
+    border-left: 1px solid #c3c3c3;
+}
+.PGI > .box > .content > .merchant > .name {
+    font-size: 14px;
+    font-weight: bold;
+}
+.PGI > .box > .content > .merchant > .theme {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.PGI > .box > .content > .title-details {
+    text-align: left;
+    float: left;
+    padding: 10px 25px;
+}
+.PGI > .box > .content > .title-details > .title {
+    font-size: 17px;
+}
+.PGI > .box > .content > .title-details > .detail {
+    font-size: 9px;
+}
+.PGI > .box > .content > .sec-form > .amount {
+    width: 100%;
+    height: 65px;
+    background: #ffffff;
+    box-sizing: border-box;
+    padding: 17px;
+    background-image: url(../image/card.svg);
+    background-repeat: no-repeat;
+    background-position: 102% top;
+    background-size: 62px;
+}
+.PGI > .box > .content > .sec-form > .amount > .label {
+    float: right;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.PGI > .box > .content > .sec-form > .amount > .label > .cont {
+    float: left;
+    height: 20px;
+    padding: 9px 9px 1px 15px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-size: 10px;
+    /*    box-shadow: 9px 0px 20px 0px rgba(0, 0, 0, 0.6);*/
+}
+.PGI > .box > .content > .sec-form > .amount > .label > .line {
+    height: 20px;
+    padding: 5px 0;
+    width: 1px;
+    float: left;
+}
+.PGI > .box > .content > .sec-form > .amount > .label > .amnt {
+    height: 20px;
+    float: left;
+    padding: 7px 15px 3px 9px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    /*    box-shadow: 6px 0px 20px 0px rgba(0, 0, 0, 0.6);*/
+    font-family: Roboto;
+    font-size: 14px;
+}
+#ccode {
+    font-size: 10px;
+}
+.PGI > .box > .content > .sec-form > .sec-mandatory {
+    padding: 17px 35px;
+}
+.PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field {
+    padding: 1px;
+    float: left;
+    width: 49.5%;
+}
+.PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field >label {
+    font-family: Raleway;
+    font-size: 11px;
+    padding: 0px 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    color: black;
+    font-weight: 400;
+}
+.PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field >.input-field {
+    padding: 5px;
+    margin-left: 2px;
+    box-sizing: border-box;
+}
+.PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field >.input-field > input.input_ {
+    width: 100%;
+    padding: 0 10px;
+    border: 0px solid #d0d0d0;
+    /*    border: 1px solid #d0d0d0;*/
+    outline: none;
+    font-family: Raleway;
+    background: #efefef;
+    /*    background: transparent;*/
+    font-size: 13px;
+    color: gray;
+    height: 32px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field >.input-field > input.input_y {
+    width: 50%;
+    padding: 0 10px;
+    border: 0px solid #d0d0d0;
+    /*    border: 1px solid #d0d0d0;*/
+    outline: none;
+    font-family: Raleway;
+    background: #efefef;
+    /*    background: transparent;*/
+    font-size: 12px;
+    color: black;
+    height: 32px;
+    font-weight: 400;
+    text-align: center;
+    box-sizing: border-box;
+}
+.PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field >.input-field > input.input_m {
+    width: 50%;
+    padding: 0 10px;
+    border: 0px solid #d0d0d0;
+    /*    border: 1px solid #d0d0d0;*/
+    outline: none;
+    font-family: Raleway;
+    /*    background: transparent;*/
+    background: #efefef;
+    font-size: 12px;
+    color: black;
+    height: 32px;
+    font-weight: 400;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #d0d0d0;
+    box-sizing: border-box;
+}
+.sec-field >.input-field > input.input-cardField {
+    width: 75%;
+    padding: 0 10px;
+    height: 32px;
+    border: 0px solid #d0d0d0;
+    /*    border: 1px solid #d0d0d0;*/
+    border-right: 0px solid;
+    outline: none;
+    font-family: Roboto;
+    background: #efefef;
+    /*    background: transparent;*/
+    font-size: 14px;
+    color: black;
+    box-sizing: border-box;
+}
+.sec-field >.input-field >span.caImage {
+    float: right;
+    border: 0px solid #d0d0d0;
+    /*    border: 1px solid #d0d0d0;*/
+    border-left: 0px solid;
+    height: 32px;
+    box-sizing: border-box;
+    width: 25%;
+    padding: 0px 5px;
+    background: #e4e4e4;
+}
+.sec-field > img.infosvg {
+    height: 12px;
+    width: auto;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: -2px;
+    cursor: pointer;
+}
+.PGI > .box > .content > .sec-form > .sec-optional {
+    padding: 10px 35px;
+}
+.PGI > .box > .content > .sec-form > .sec-optional > .sec-field {
+    padding: 1px;
+}
+.PGI > .box > .content > .sec-form > .sec-optional >table .input_ {
+    width: 100%;
+    padding: 0 10px;
+    border: 1px solid #d0d0d0;
+    outline: none;
+    font-family: Raleway;
+    background: #efefef;
+    /*    background: transparent;*/
+    font-size: 13px;
+    color: gray;
+    height: 32px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #dcdcdc;
+    background: linear-gradient(to right, #ffffff 0%, #c6c6c6 25%, #c6c6c6 75%, #ffffff 100%);
+    margin: 5px auto;
+    float: left;
+}
+.sec-field > div.tooltip {
+    position: absolute;
+    border: 1px solid gray;
+    margin: -30px 0 0 30px;
+    display: none;
+}
+.sec-field > label> span.mandatory {
+    font-family: serif;
+    color: #ff1717;
+    padding-left: 3px;
+}
+table#optional {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+table#optional td div.input-field {
+    padding: 5px;
+    box-sizing: border-box;
+}
+table#optional th {
+    font-size: .85em;
+    letter-spacing: .1em;
+}
+.sec-field > .input-field > .input_captcha {
+    width: 20.5%;
+    padding: 0 10px;
+    border: 0px solid #d0d0d0;
+    /*    border: 1px solid #d0d0d0;*/
+    outline: none;
+    font-family: Raleway;
+    /*    background: transparent;*/
+    background: #efefef;
+    font-size: 13px;
+    color: gray;
+    height: 32px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.sec-field > .input-field > .wv-captchaImg {
+    width: 100px;
+    height: 32px;
+    float: left;
+    border: 1px solid #d6d6d6;
+    box-sizing: border-box;
+}
+.sec-field > .input-field > .wv-refresh {
+    height: 32px;
+    padding: 3px 10px;
+    float: left;
+    cursor: pointer;
+    border: 1px solid #d6d6d6;
+    border-left: 0px solid;
+    /*    border-right: 0px solid;*/
+    box-sizing: border-box;
+}
+.sec-field > .input-field > img.wv-refresh:hover {
+    background: #eaeaea;
+}
+.PGI > .box > .content > .sec-form > .sec-mandatory > .sec-field_3 {
+    width: 100%;
+}
+.PGI > .box > .content > .sec-form > .sec-button {
+    width: 100%;
+    padding: 10px 35px;
+    box-sizing: border-box;
+    text-align: right;
+    background: #d8d8d8;
+}
+.sec-button .cancelbtn {
+    margin-right: -4px;
+    padding: 8px 14px;
+    outline: none;
+    border: 1px solid #004073;
+    border-right: 0px solid;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: white;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    background: #ff9a35;
+    background: -moz-linear-gradient(top, #ff9a35 0%, #ff9b28 50%, #ff9b28 50%, #ff7c00 51%, #ff7f04 100%);
+    background: -webkit-linear-gradient(top, #ff9a35 0%, #ff9b28 50%, #ff9b28 50%, #ff7c00 51%, #ff7f04 100%);
+    background: linear-gradient(to bottom, #ff9a35 0%, #ff9b28 50%, #ff9b28 50%, #ff7c00 51%, #ff7f04 100%);
+}
+.sec-button > .paybtn {
+    padding: 8px 50px;
+    outline: none;
+    border: 1px solid #004073;
+    border-left: 0px solid;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: white;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    background: #3b9bef;
+    background: -moz-linear-gradient(top, #3b9bef 0%, #479ced 50%, #479ced 50%, #3690f0 51%, #1e69de 100%);
+    background: -webkit-linear-gradient(top, #3b9bef 0%, #479ced 50%, #479ced 50%, #3690f0 51%, #1e69de 100%);
+    background: linear-gradient(to bottom, #3b9bef 0%, #479ced 50%, #479ced 50%, #3690f0 51%, #1e69de 100%);
+}
+.sec-button  .cancelbtn:hover {
+    background: #ff7f04;
+    background: -moz-linear-gradient(top, #ff7f04 0%, #ff7f04 100%);
+    background: -webkit-linear-gradient(top, #ff7f04 0%, #ff7f04 100%);
+    background: linear-gradient(to bottom, #ff7f04 0%, #ff7f04 100%);
+}
+.sec-button > .paybtn:hover {
+    background: #1e69de;
+    background: -moz-linear-gradient(top, #1e69de 1%, #1e69de 100%);
+    background: -webkit-linear-gradient(top, #1e69de 1%, #1e69de 100%);
+    background: linear-gradient(to bottom, #1e69de 1%, #1e69de 100%);
+}
+.sec-button > .caption {
+    padding: 3px 5px;
+    float: left;
+    margin: 11px 8px;
+    font-size: 8px;
+    font-family: Raleway;
+    border: 1px solid #8e8e8e;
+    color: #1d1d1d;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+.sec-button > .caption a {
+    color: #1d1d1d;
+    text-decoration: none;
+}
+.mandatory_msgsec {
+    border-bottom: 1px solid #ff2828 !important;
+}
+.mandatory_msgsec_label{
+    color:#ff2828 !important;
+}
+
+.PGI > .box > .content > .sec-form > .sec-footer {}

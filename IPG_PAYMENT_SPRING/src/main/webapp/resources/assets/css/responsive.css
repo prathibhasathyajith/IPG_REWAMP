@@ -1,0 +1,99 @@
+@media only screen and (max-width: 650px) {
+    .ipg-main-content {
+        width: 80%;
+    }
+    .ipg-main-content-s{
+        width: 80%;
+    }
+    .ipg-form {
+        width: 95%;
+    }
+    .ipg-txn {
+        padding: 10px 50px 10px 50px;
+    }
+    .ipg-merchant-image > img {
+        width: 60px;
+        height: auto;
+    }
+    .ipg-bank-image > img {
+        width: 40px;
+        height: auto;
+    }
+    .float-new{
+        float: none;
+        width: 96%;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .ipg-txn > .ipg-txntext {
+        float: none;
+    }
+    .ipg-txn > .ipg-txnvalue {
+        margin: 0 auto;
+        float: none;
+        width: fit-content;
+    }
+    .ipg-txn {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .ipg-horizontal-line {
+        width: 95%;
+    }
+    .ipg-horizontal-line-s{
+        width: 95%;
+    }
+    .ipg-form {
+        width: 100%;
+    }
+    .ipg-formgroup > span > .ipg-inputfield{
+        width: 98%;
+    }
+}
+@media only screen and (max-width: 370px) {
+    #ipg-form-1{
+        margin: 10px auto 30px auto;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .ipg-formgroup > span > .ipg-inputfield{
+        width: 97%;
+    }
+    .ipg-formgroup > .ipg-formgroup-exdate > span > .ipg-inputfield{
+        width: 75px;
+    }
+}
+/* ============== modal responsive =================== */
+
+@media only screen and (max-width: 1100px) {
+    .ipg-modalcont {
+        width: 46%;
+        left: 25%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .ipg-modalcont {
+        width: 56%;
+        left: 20%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .ipg-modalcont {
+        width: 66%;
+        left: 15%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .ipg-modalcont {
+        width: 76%;
+        left: 10%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .ipg-modalcont {
+
+        left: 3%;
+        width: 90%;
+    }
+}

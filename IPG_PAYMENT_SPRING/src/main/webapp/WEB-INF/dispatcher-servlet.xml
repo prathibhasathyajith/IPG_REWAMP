@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:flow="http://www.springframework.org/schema/webflow-config"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:jms="http://www.springframework.org/schema/jms"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:lang="http://www.springframework.org/schema/lang"
+       xmlns:osgi="http://www.springframework.org/schema/osgi"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:util="http://www.springframework.org/schema/util"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+          http://www.springframework.org/schema/webflow-config http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.0.xsd
+          http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.3.xsd
+          http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms-4.3.xsd
+          http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-4.3.xsd
+          http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi-1.2.xsd
+          http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
+          http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd
+          http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+">
+    
+    <context:component-scan base-package="com.epic.ipg"/>  
+    <mvc:resources mapping="/resources/**" location="/resources/" />
+    <mvc:annotation-driven/>
+    
+    <mvc:interceptors>
+        <mvc:interceptor>  
+            <mvc:mapping path="/**" />
+            <mvc:exclude-mapping path="/" />
+            <mvc:exclude-mapping path="/IPGMerchantAddOnServlet" />
+            <mvc:exclude-mapping path="/IPGMPITxnResponseServlet" />
+            <mvc:exclude-mapping path="/returnToMerchant" />
+            <mvc:exclude-mapping path="/IPGCustomerRequestServlet" />
+            <mvc:exclude-mapping path="/IPGFieldValidateFlagServlet" />
+            <bean class="com.epic.ipg.util.interceptor.CheckAccessInteceptor"/>     
+        </mvc:interceptor>
+    </mvc:interceptors>
+    
+    <bean
+        class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix">
+            <value>/WEB-INF/views/</value>
+        </property>
+        <property name="suffix">
+            <value>.jsp</value>
+        </property>
+    </bean>
+
+
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dbDataSource" />
+    </bean>
+    <!--    <bean id="dbDataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+        <property name="url" value="jdbc:oracle:thin:@192.168.1.93:1521:orcl" />
+        <property name="username" value="ipgdev" />
+        <property name="password" value="password" />
+    </bean>-->
+<!--    <bean id="dbDataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+        <property name="url" value="jdbc:oracle:thin:@epictechdev.com:50250:orcl" />
+        <property name="username" value="ipgdev" />
+        <property name="password" value="password" />
+    </bean>-->
+    <bean id="dbDataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+        <property name="url" value="jdbc:oracle:thin:@epictechdev.com:50150:ceft" />
+        <property name="username" value="3DIPGTEST" />
+        <property name="password" value="password" />
+    </bean>
+<!--    <bean id="dbDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">-->
+<!--        <property name="jndiName" value="jdbc/IPG_JNDI"/>-->
+<!--    </bean>-->
+    
+    <bean id="sessionBean" class="com.epic.ipg.util.common.SessionBean"
+          scope="session">
+        <!-- this next element effects the proxying of the surrounding bean -->
+        <aop:scoped-proxy />
+    </bean>
+</beans>

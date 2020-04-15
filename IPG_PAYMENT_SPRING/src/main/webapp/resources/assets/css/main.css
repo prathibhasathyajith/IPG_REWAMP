@@ -1,0 +1,735 @@
+@import 'fonts.css';
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /*background-image: url(../image/ccard_back_new.jpg);*/
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+body.cusreq{
+    background-color: white;
+    background-image: none;
+}
+.ipg-main-content {
+    margin: 2vh auto 6vh auto;
+    width: 550px;
+    /* border-radius: 25px; */
+    background-color: #fbfbfb;
+    height: auto;
+    /* background-image: url(../image/ccard_back_blur_2.jpg); */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15); */
+    /* transition: 0.5s; */
+    padding: 8px;
+}
+.ipg-bank-details {
+    margin: 2vh auto;
+}
+.ipg-bank-image {
+    margin: 0 auto;
+    text-align: center;
+}
+.ipg-bank-image > img {
+    width: 9vw;
+    height: auto;
+}
+.ipg-bank-name {
+    margin-top: 5px;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 900;
+    color: #0034ff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.ipg-title {
+    font-family: Raleway;
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.ipg-merchant-details {
+    font-family: Raleway;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+}
+.ipg-merchant-image > img {
+    width: 4vw;
+    height: auto;
+}
+.ipg-merchant-name {
+    font-size: 10px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.ipg-merchant-theme {
+    font-size: 13px;
+    font-weight: bolder;
+    color: orange;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.ipg-merchant-other {}
+.ipg-horizontal-line {
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    margin: 10px auto;
+}
+.ipg-txn {
+    display: block;
+    padding: 3px 70px;
+}
+.ipg-txn > .ipg-txntext {
+    float: left;
+    font-size: 11px;
+    padding: 5px 5px;
+    font-family: Raleway;
+    color: black;
+}
+.ipg-txn > .ipg-txnvalue {
+    float: left;
+    font-size: 13px;
+    font-family: aller;
+    padding: 4px 10px;
+    color: #000000;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.34);
+    border-radius: 15px;
+    border: 1px solid #2b2b2b;
+}
+.ipg-info {
+    margin: 0 auto;
+    text-align: center;
+    font-family: Raleway;
+}
+.ipg-info-1 {
+    font-size: 10px;
+    font-weight: 600;
+    color: #00527b;
+    text-align: left;
+    padding-left: 178px;
+}
+.ipg-info-2 {
+    font-size: 9px;
+    letter-spacing: 0px;
+    color: black;
+}
+.ipg-form {
+    margin: 25px auto;
+    width: 80%;
+    font-family: Raleway;
+}
+#ipg-form-1{
+    margin: 5px auto 30px auto
+}
+.ipg-formgroup {
+    display: grid;
+    margin: 0px 10px;
+}
+.ipg-formgroup-button {
+    display: block;
+    margin: 10px;
+    text-align: right;
+}
+.ipg-label {
+    font-family: Raleway;
+    font-size: 13px;
+    color: black;
+}
+.ipg-formgroup > label > span.star {
+    color: red;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 3px;
+}
+.ipg-formgroup > span > .ipg-inputfield {
+    border: 1px solid black;
+    font-family: Raleway;
+    font-size: 15px;
+    padding: 5px 15px;
+    /* border-radius: 10px; */
+    outline: none;
+    width: 99%;
+}
+.ipg-formgroup > .ipg-inputfield {
+    border: 1px solid black;
+    font-family: Raleway;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 0px;
+    outline: none;
+    width: 99%;
+}
+.ipg-formgroup > .ipg-inputfield-wv {
+    border: 1px solid black;
+    font-family: Raleway;
+    font-size: 15px;
+    padding: 5px 15px;
+    /* border-radius: 10px; */
+    outline: none;
+    width: 105px;
+    margin: 6px;
+}
+.ipg-formgroup > .ipg-formgroup-exdate > span > .ipg-inputfield {
+    border: 1px solid black;
+    font-family: Raleway;
+    font-size: 15px;
+    padding: 5px 20px;
+    /* border-radius: 10px; */
+    outline: none;
+    width: 83px;
+}
+.ipg-messageBox{
+    margin: 25px auto 0 auto;
+    text-align: center;
+    font-family: Raleway;
+    /*float: left;*/
+    font-size: 11px;
+    padding: 3px 12%;
+}
+.ipg-error-details{
+    background: rgba(255, 17, 0, 0.69);
+    color: white;
+}
+.ipg-error-label{
+    color: #ffffff;
+    background: rgba(255, 0, 0, 0.56);
+    padding: 0px 0;
+    border-radius: 7px;
+    display: block;
+}
+
+#cvvinput{
+    width: 164px;
+}
+.ipg-formgroup > .ipg-formgroup-exdate >.ipg-inputfield {
+    border: 1px solid black;
+    font-family: Raleway;
+    font-size: 15px;
+    padding: 5px 20px;
+    /* border-radius: 10px; */
+    outline: none;
+    width: 67px;
+    margin: 0 0px;
+}
+.ipg-formgroup > .ipg-formgroup-exdate >.ipg-spanclass::after {
+    content: 'i';
+    padding: 1px 7px;
+    background-color: transparent;
+    border-radius: 7px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 0px 0px 0px -28px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Raleway;
+    cursor: pointer;
+}
+.ipg-formgroup-button > .ipg-button {
+    padding: 5px 15px;
+    font-family: Raleway;
+    font-weight: 400;
+    border-radius: 20px;
+    border: 1px solid black;
+    color: black;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+.ipg-formgroup-button > .ipg-button:hover {
+    border: 1px solid white;
+    color: white;
+}
+.ipg-formgroup-button > .ipg-button:active {
+    border: 1px solid #009688;
+    color: #009688;
+}
+
+/*
+.ipg-formgroup-button > .ipg-button:focus{
+    border: 1px solid red;
+    color: red;
+}
+*/
+
+.ipg-footer {
+    text-align: center;
+    margin: -30px 0 0 0;
+    font-family: Raleway;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: gray;
+}
+.ipg-formgroup > .wordveri {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.67)
+}
+.ipg-formgroup-exdate {
+    float: left;
+}
+.ipg-formgroup > .ipg-spanclass::after {
+    content: 'i';
+    padding: 1px 7px;
+    background-color: transparent;
+    border-radius: 7px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 0px 0px 0px -28px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Raleway;
+    cursor: pointer;
+}
+
+/*modal */
+
+.ipg-infomodal {
+    margin: 0 auto;
+    text-align: center;
+}
+.ipg-overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(29, 29, 29, 0.68);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+.ipg-modalcont {
+    display: none;
+    position: fixed;
+    z-index: 11;
+    top: 30%;
+    left: 30%;
+    margin: 0;
+    width: 36%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: auto;
+    box-shadow: 0px 3px 16px 0px rgba(35, 35, 35, 0.88);
+    padding: 2%;
+}
+img.ipg-info-image {
+    width: 250px;
+    height: auto;
+}
+.ipg-modal-title {
+    font-family: Raleway;
+    font-size: 16px;
+    padding: 4px 8px;
+    background: #607D8B;
+    margin: 5px auto;
+    width: fit-content;
+    border-radius: 15px;
+    color: wheat;
+}
+.ipg-info-text {
+    font-family: Raleway;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 10px;
+    font-size: 13px;
+    color: black;
+}
+
+input:not([type="image"]), textarea {
+    box-sizing: border-box;
+}
+user agent stylesheet
+input:not([type]), input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"] {
+    padding: 1px 0px;
+}
+user agent stylesheet
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+user agent stylesheet
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
+user agent stylesheet
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb !important;
+}
+
+/*payment receipt*/
+.ipg-main-content-s {
+    margin: 10vh auto 6vh auto;
+    width: 530px;
+    /*border-radius: 25px;*/
+    background-color: #f9f9f9;
+    height: auto;
+    /*background-image: url(../image/ccard_back_blur_2.jpg);*/
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    padding: 20px;
+}
+.ipg-horizontal-line-s {
+    width: 90%;
+    height: 1px;
+    background-color: #d7d7d7;
+    margin: 10px auto;
+}
+.ipg-footer-s {
+    text-align: center;
+    margin: -25px 0 0 0;
+    font-family: Raleway;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: black;
+}
+.ipg-payment-recepit-main {
+    margin: 0 auto;
+    text-align: center;
+}
+.ipg-payment-recepit-main > .ipg-payrec-title {
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+.ipg-payment-recepit-main > .ipg-payrec-details {
+    padding: 5px 25px;
+    font-size: 12px;
+    font-family: Raleway;
+    line-height: 20px;
+}
+.ipg-payrec-details > .ipg-payrec-msg {
+    text-align: center;
+    color: #3F51B5;
+    font-size: 14px;
+    font-weight: 600;
+}
+.ipg-payrec-details > .ipg-payrec-table {
+    margin: 7px auto;
+    font-size: 13px;
+    font-family: Raleway;
+}
+.ipg-payrec-details > .ipg-payrec-table td:nth-child(3) {
+    font-weight: bold;
+}
+.ipg-payrec-details > .ipg-payrec-rederect {
+    font-weight: 400;
+    font-size: 10px;
+}
+.ipg-error{
+    color: red !important;
+}
+
+
+.cusreq-mainCont {
+    padding: 0;
+    margin: 0 auto;
+}
+.cusreq-insideBox {
+    margin: 0 auto;
+    display: table;
+    height: 100%;
+}
+.cusreq-box {
+    margin: 100px 0;
+    /*    display: table-cell;*/
+    /*    vertical-align: middle;*/
+}
+.cusreq-box .inside {
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 50px 20px 0px 20px;
+    ;
+    background-color: white;
+    width: 500px;
+    height: auto;
+    box-shadow: 0px 3px 150px 35px rgba(197, 197, 197, 0.5);
+}
+.cusreq-box .top {
+    box-sizing: border-box;
+    padding: 5px;
+    position: absolute;
+    margin: -35px 25px;
+    width: 450px;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0 3px 49px 2px rgba(0, 0, 0, 0.11);
+    border-radius: 5px;
+}
+.cusreq-box .logo {
+    float: left;
+    width: auto;
+    height: auto;
+    background-color: white;
+    padding: 5px;
+    margin: 0 20px;
+}
+.cusreq-box .cont {
+    /*font-family: Raleway;*/
+    float: left;
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin: 10px 0 0 0;
+}
+.cusreq-box .cont .name {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bolder;
+    font-size: 17px;
+    color: gray;
+    /*font-style: italic;*/
+}
+.cusreq-box .cont .theme {
+    font-weight: 500;
+    font-size: 12px;
+    /*color: black;*/
+}
+
+/*bootstrap classes*/
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    min-width: 0;
+}
+legend {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: inherit;
+    /*color: #ffffff;*/
+    border: 0;
+    /*border-bottom: 1px solid #e5e5e5;*/
+    /*background-color: #1e3e54;*/
+    text-align: center;
+    box-sizing: border-box;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+body {
+    /*font-family: Raleway;*/
+    font-size: 11px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #ffffff;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+.form-control {
+    cursor: auto;
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 4px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #000000;
+    background-color: #f3f3f3;
+    background-image: none;
+    border: 1px solid #ffffff;
+}
+.form-control:focus {
+    border: 1px solid #ffffff;
+    outline: none;
+}
+.alert {
+    border-width: 0 1px 4px 1px;
+}
+.alert-danger {
+    background-color: #ff4136;
+    border-color: #ff1103;
+    color: #ffffff;
+}
+.alert-dismissable,
+.alert-dismissible {
+    padding-right: 35px;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.alert-dismissable,
+.alert-dismissible {
+    padding-right: 35px;
+}
+.alert-danger {
+    background-color: #ff4136;
+    border-color: #ff1103;
+    color: #ffffff;
+}
+.alert {
+    border-width: 0 1px 4px 1px;
+}
+.alert-dismissable .close,
+.alert-dismissible .close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: inherit;
+}
+button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+.close {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.4;
+}
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+b,
+strong {
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #fff;
+    opacity: 1;
+}
+.close:hover,
+.close:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.cusreq-btn {
+    padding: 15px;
+    border: 0px solid white;
+    /*background: #1E3E54;*/
+    /*color: white;*/
+    /*font-family: Raleway;*/
+    width: 109%;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+    margin-top: 20px;
+    text-align: center;
+}
+.cusreq-btn-reset:hover ,
+.cusreq-btn-sub:hover{
+    background: #ababab;
+    border-top: 1px solid black;
+}
+.cusreq-btn-reset {
+    margin-left: -20px;
+    float: left;
+}
+.cusreq-btn-sub {
+    float: right;
+    margin-right: -20px;
+}
+.cusreq-input{
+    padding: 7px 12px !important;
+    font-family: Raleway;
+    font-size: 12px;
+}
+
+table.cusreq-table{
+    width:100%;
+}
+
+.radio-button{
+    float: left;
+    width: 100%;
+}
+.radio-button > div.radio{
+    width: 30%;
+    float: right;
+    padding-left: 3%;
+    background: #f3f3f3;
+    cursor: pointer;
+}
+.radio-button > div.radio:hover{
+    background: white;
+}
+.radio-button > div.radio > img{
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+.selectclass{
+    cursor: pointer;
+    height: 18px;
+    margin: 16px;
+    width: 18px;
+}    
+
+.float-new{
+    float: left;
+    width: 56%;
+}
+.imageMerchntNew{
+    height: 35px;
+    width: auto;
+    float: left;
+    margin-left: 42px;
+    text-align: center;
+    margin-top: 0px;
+}
